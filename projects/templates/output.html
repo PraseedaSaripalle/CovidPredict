@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<h3> Eye Pain:{{ eyesymptom }}</h3>
+<h3> Chest Pain:{{ chestsymptom }}</h3>
+<h3> Soar Throat:{{ soarsymptom }}</h3>
+<h3> Stuffy/runny nose:{{ runnynosesymptom }}</h3>
+<h3> Weakness/Fatigue:{{ weaknesssymptom }}</h3>
+<h3> Aches/Muscle pain:{{ achessymptom }}</h3>
+<h3> Headache:{{ headachesymptom }}</h3>
+<h3> Cough:{{ coughsymptom }}</h3>
+<h3> Difficulty in Breathing:{{ breathingsymptom }}</h3>
+<h3> Change in sleep cycle:{{ sleepsymptom }}</h3>
+<h3> Did you personally meet any person with similar symptoms recently:{{ meetppl }}</h3>
+<h3> Have you ever been tested for coronavirus (COVID-19)?:{{ coronatest }}</h3>
+<h3> Have you been tested for coronavirus (COVID-19) in the last 14 days?:{{ corona14 }}</h3>
+<h3> Disease:{{ disease }}</h3>
+<h3> In the last 24 hrs, have you gone to work outside the place where you live?:{{ gone_out }}</h3>
+<h3> In the last 24 hrs, have you gone to Supermarket or Pharmacy?:{{ gone_out1 }}</h3>
+<h3> In the last 24 hrs, have you gone to Restaurant/CAFE/Shopping Mall?:{{ gone_out2 }}</h3>
+<h3> In the last 24 hrs, have you spent time with anyone who doesn't stay with you?:{{ spent_time }}</h3>
+<h3> In the last 24 hrs, have you attended a public meet?:{{ more_meet }}</h3>
+<h3> In the last 24 hrs, have you been in a crowded place?:{{ crowd }}</h3>
+<h3> In the last 24 hrs, have you used public transport?:{{ transport }}</h3>
+<h3> In the last 24 hrs, were you at home?:{{ home }}</h3>
+<h3> In the last 24 hrs,did you do any of the following above mentioned things?:{{ any }}</h3>
+<h3> In the last 24 hrs, were you using mask/hand sanitizer whenever you step out?:{{ prec }}</h3>
+<h3> How are you intentionally avoiding contact with other people?:{{ times }}</h3>
+<h3> Gender:{{ gen }}</h3>
+<h3> Do you smoke?:{{ smoke }}</h3>
+<h3> Alcohol Consumption:{{ alc }}</h3>
+<h3> Do you have access to handwash/sanitizer at work place:{{ handwash }}</h3>
+<h3> Do you have access to handwash/sanitizer at home:{{ handwash2 }}</h3>
+<h3>Age Band:{{ age }}</h3>
+
+{% endblock %}

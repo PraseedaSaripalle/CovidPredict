@@ -1,0 +1,246 @@
+{% load static %}<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Potential Covid-19 Self-Detect Prediction Tool</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <ol class="breadcrumb my-4">
+          <li class="breadcrumb text-dark"> <h6> <b> <font size="6" color="blue"> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Potential Covid-19 Self-Detect Prediction Tool </font> </b></h6></li>
+      </ol>
+    {% load static %}
+  <table cellpadding="pixels"cellspacing="pixels">
+        <colgroup>
+        <col span="20" style="background-color:white">
+        <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+            <th><h2>Symptom&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</h2></th>
+            <th><h2>Patient Response</h2></th>
+        </tr>
+       <tr>
+            <th><h3>----------------&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</h3></th>
+            <th><h3>----------------</h3></th>
+        </tr>
+        <tr>
+            <td> <h4>Eye Pain</h4></td>
+            <td><h4>{{ eyesymptom }}</h4></td>
+        </tr>
+        <tr>
+            <td> <h3>Chest Pain</h3></td>
+            <td><h3>{{ chestsymptom }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3> Soar Throat</h3></td>
+            <td><h3>{{ soarsymptom }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>  Stuffy/runny nose</h3></td>
+            <td><h3>{{ runnynosesymptom }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>  Weakness/Fatigue</h3></td>
+            <td><h3>{{ weaknesssymptom }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3> Aches/Muscle pain</h3></td>
+            <td><h3>{{ achessymptom }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3> Headache</h3></td>
+            <td><h3>{{ headachesymptom }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>Cough</h3></td>
+            <td><h3>{{ coughsymptom }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3> Difficulty in Breathing</h3></td>
+            <td><h3>{{ breathingsymptom }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3> Change in sleep cycle</h3></td>
+            <td><h3>{{ sleepsymptom }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>Did you personally meet any person with similar symptoms recently? </h3></td>
+            <td><h3>{{ meetppl }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>Have you ever been tested for coronavirus (COVID-19)? </h3></td>
+            <td><h3>{{ coronatest }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>Have you been tested for coronavirus (COVID-19) in the last 14 days? </h3></td>
+            <td><h3>{{ corona14 }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>Disease </h3></td>
+            <td><h3>{{ disease }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>In the last 24 hrs, have you gone to work outside the place where you live? </h3></td>
+            <td><h3>{{ gone_out }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>In the last 24 hrs, have you gone to Supermarket or Pharmacy? </h3></td>
+            <td><h3>{{ gone_out1 }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>In the last 24 hrs, have you gone to Restaurant/CAFE/Shopping Mall? </h3></td>
+            <td><h3>{{ gone_out2 }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>In the last 24 hrs, have you spent time with anyone who doesn't stay with you? </h3></td>
+            <td><h3>{{ spent_time }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>In the last 24 hrs, have you attended a public meet? </h3></td>
+            <td><h3>{{ more_meet }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>In the last 24 hrs, have you been in a crowded place? </h3></td>
+            <td><h3>{{ crowd }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>In the last 24 hrs, have you used public transport? </h3></td>
+            <td><h3>{{ transport }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>In the last 24 hrs, were you at home? </h3></td>
+            <td><h3>{{ home }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>In the last 24 hrs,did you do any of the following above mentioned things? </h3></td>
+            <td><h3>{{ any }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3> In the last 24 hrs, were you using mask/hand sanitizer whenever you step out? </h3></td>
+            <td><h3>{{ prec }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>  How are you intentionally avoiding contact with other people? </h3></td>
+            <td><h3>{{ times }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3> Gender </h3></td>
+            <td><h3>{{ gen }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>  Do you smoke? </h3></td>
+            <td><h3>{{ smoke }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3>  Alcohol Consumption </h3></td>
+            <td><h3>{{ alc }}</h3></td>
+        </tr>
+
+        <tr>
+            <td> <h3>  Do you have access to handwash/sanitizer at work place? </h3></td>
+            <td><h3>{{ handwash  }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3> Do you have access to handwash/sanitizer at home? </h3></td>
+            <td><h3>{{ handwash2 }}</h3></td>
+        </tr>
+        <tr>
+            <td> <h3> Age Band </h3></td>
+            <td><h3>{{ age }}</h3></td>
+        </tr>
+    </table>
+    </div>
+  <div class="container">
+      <ol class="breadcrumb my-4">
+          <li class="breadcrumb text-dark"> <h6> <b> <font size="6" color="blue"> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Prediction Summary </font> </b></h6></li>
+      </ol>
+      <table>
+          <table cellpadding="pixels"cellspacing="pixels">
+        <colgroup>
+        <col span="20" style="background-color:white">
+        <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+            <th><h2>Algorithm&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</h2></th>
+            <th><h2>Prediction Response</h2></th>
+        </tr>
+       <tr>
+            <th><h3>----------------&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</h3></th>
+            <th><h3>----------------</h3></th>
+        </tr>
+        <tr>
+            <th><h4>Decision Tree&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</h4></th>
+            <th><h4>{{testSetValues2}}</h4></th>
+        </tr>
+        <tr>
+            <th><h4>Random Forest&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</h4></th>
+            <th><h4>{{testSetValues3}}</h4></th>
+        </tr>
+        <tr>
+            <th><h4>Logistic Regression&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</h4></th>
+            <th><h4>{{testSetValues4}}</h4></th>
+        </tr>
+        <tr>
+            <th><h4>GaussianNB&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</h4></th>
+            <th><h4>{{testSetValues1}}</h4></th>
+        </tr>
+      </table>
+  </div>
+  <div class="container">
+      <ol class="breadcrumb my-4">
+          <li class="breadcrumb text-dark"> <h6> <b> <font size="6" color="blue"> &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prediction Metrics Summary </font> </b></h6></li>
+      </ol>
+      <table>
+          <table cellpadding="pixels"cellspacing="pixels">
+        <colgroup>
+        <col span="20" style="background-color:white">
+        <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+            <th><h2>Algorithm&nbsp;&nbsp;</h2></th>
+            <th><h2>Accuracy&nbsp;&nbsp;</h2></th>
+            <th><h2>Precision&nbsp;&nbsp;</h2></th>
+            <th><h2>Recall&nbsp;&nbsp;</h2></th>
+            <th><h2>F1 Score&nbsp;&nbsp;</h2></th>
+        </tr>
+       <tr>
+            <th><h3>----------&nbsp;&nbsp;</h3></th>
+            <th><h3>----------&nbsp;&nbsp;</h3></th>
+            <th><h3>----------&nbsp;&nbsp;</h3></th>
+            <th><h3>----------&nbsp;&nbsp;</h3></th>
+            <th><h3>----------&nbsp;&nbsp;</h3></th>
+        </tr>
+        <tr>
+            <th><h4>Decision Tree&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</h4></th>
+            <th><h4>{{daccuracyScore}}</h4></th>
+            <th><h4>{{dprecisionScore}}</h4></th>
+            <th><h4>{{drecallScore}}</h4></th>
+            <th><h4>{{df1Score}}</h4></th>
+
+        </tr>
+        <tr>
+            <th><h4>Random Forest&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</h4></th>
+            <th><h4>{{raccuracyScore}}</h4></th>
+            <th><h4>{{rprecisionScore}}</h4></th>
+            <th><h4>{{rrecallScore}}</h4></th>
+            <th><h4>{{rf1Score}}</h4></th>
+        </tr>
+        <tr>
+            <th><h4>Logistic Regression&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</h4></th>
+            <th><h4>{{laccuracyScore}}</h4></th>
+            <th><h4>{{lprecisionScore}}</h4></th>
+            <th><h4>{{lrecallScore}}</h4></th>
+            <th><h4>{{lf1Score}}</h4></th>
+        </tr>
+        <tr>
+            <th><h4>GaussianNB&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</h4></th>
+            <th><h4>{{accuracyScore}}</h4></th>
+            <th><h4>{{precisionScore}}</h4></th>
+            <th><h4>{{recallScore}}</h4></th>
+            <th><h4>{{f1Score}}</h4></th>
+        </tr>
+      </table>
+  </div>
+  </body>
+</html>
