@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-)47-&avw793cxr5u+2=7sp*j0=^(vwl4qntf751l+x+h7fk!qk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','cowarcovidpredict.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1:8000/corona_view/','cowarcovidpredict.herokuapp.com']
 
 
 # Application definition
